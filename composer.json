@@ -1,19 +1,26 @@
 {
-    "name": "ypcode/contact",
-    "description": "it's send email to admin and save contact information to database",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "ypc0de",
-            "email": "abdulazizprogramming@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Ypcode\\Contact\\": "src/"
-        }
+  "name": "ypcode/contact",
+  "description": "it's send email to admin and save contact information to database",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ypc0de",
+      "email": "abdulazizprogramming@gmail.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Ypcode\\Contact\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ypcode\\Contact\\ContactServiceProvider"
+      ]
+    }
+  }
 }
